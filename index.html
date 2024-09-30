@@ -10,22 +10,19 @@
     body {
       background-color: Black;
     }
-    @keyframes skibidi {
-      0% {background-image: "z30261064IER,Skibidi-Toilet.jpg"; left:0px; top:2000px;}
-      100% {background-image: "z30261064IER,Skibidi-Toilet.jpg"; left:0px; top:0px;
-    }
-    div {
-      width: 500px;
-      height: 500px;
-      background-image: "z30261064IER,Skibidi-Toilet.jpg";
-      position: relative;
-      animation-name: skibidi;
-      animation-duration: 4s;
+
+    .skibidi {
+      opacity: 0;
+      transition: opacity 230ms;
     }
 
-  </style>
+    .skibidi:hover {
+        opacity: 1;
+    }
+
+    </style>
 </head>
 <body>
-<div></div>
+<img src="z30261064IER,Skibidi-Toilet.jpg" name="skibidi" width="500" height="500" />
 </body>
 </html>
